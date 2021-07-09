@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6f2ff;
+}
+
+.desk, .tabletop, .tabletop-border, .left-leg,
+.right-leg, .laptop, .screen-border, .camera, 
+.screen, .base, .notch, .mug, .mug-body,
+.mug-handle, .pen-cup, .pen-cup-body, 
+.pen-cup-base, .pen, .pen-top, .pencil,
+.pencil-top, .eraser, .books, .bottom-book, 
+.middle-book, .top-book, .plant, .pot, .stem,
+.leaf-1, .leaf-2, .leaf-3 {
+  position: absolute;
+}
+
+.image-wrap {
+  position: relative;
+  width: 1500px;
+  height: 500px;
+  border: 1px solid red;
+  .desk {
+    bottom: 0;
+    right: 220px;
+    width: 800px;
+    height: 150px;
+    .tabletop {
+      z-index: 1;
+      width: 100%;
+      height: 10px;
+      background-color: #a3b3c2;
+      border-radius: 2px 2px 4px 4px;
+    }
+    .tabletop-border {
+      top: 10px;
+      left: 1%;
+      width: 98%;
+      height: 30px;
+      background-color: #8599ad;
+      border-radius: 0 0 4px 4px;
+    }
+    .left-leg, .right-leg {
+      top: 40px;
+      width: 20px;
+      height: 110px;
+      background-color: #8599ad;
+    }
+    .left-leg {
+      left: 2%;
+    }
+    .right-leg {
+      right: 2%;
+    }
+  }
+}
