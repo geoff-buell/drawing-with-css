@@ -15,7 +15,7 @@ body {
 .right-leg, .laptop, .screen-border, .camera, 
 .screen, .base, .notch, .mug, .mug-body,
 .mug-handle, .pen-cup, .pen-cup-body, 
-.pen-cup-base, .pen, .pen-top, .pencil,
+.pen-cup-base, .pen, .pen-body, .pen-top, .pencil,
 .pencil-top, .eraser, .books, .bottom-book, 
 .middle-book, .top-book, .plant, .pot, .stem,
 .leaf-1, .leaf-2, .leaf-3 {
@@ -120,6 +120,56 @@ body {
       height: 60%;
       border-radius: 0 16px 16px 0;
       border: 6px solid #006666;
+    }
+  }
+  .pen-cup {
+    top: 250px;
+    right: 800px;
+    width: 50px;
+    height: 100px;
+    .pen-cup-body {
+      z-index: 1;
+      bottom: 0;
+      width: 40px;
+      height: 0;
+      border-top: 70px solid #006666;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+    }
+    .pen {
+      left: 10px;
+      width: 8px;
+      height: 36px;
+      transform: rotate(-5deg);
+      .pen-body {
+        bottom: 0;
+        width: 100%;
+        height: 28px;
+        background-color: #006666;
+      }
+      .pen-top {
+        left: 28%;
+        width: 50%;
+        height: 16px;
+        background-color: #006666;
+      }
+    }
+    .pencil {
+      left: 30px;
+      width: 6px;
+      height: 36px;
+      background-color: orange;
+      transform: rotate(7deg);
+      .pencil-top {
+        width: 100%;
+        height: 16px;
+        background-color: silver;
+        .eraser {
+          width: 100%;
+          height: 6px;
+          background-color: pink;
+        }
+      }
     }
   }
 }
