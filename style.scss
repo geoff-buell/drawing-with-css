@@ -102,4 +102,24 @@ body {
       }
     }
   }
+  .mug {
+    top: 300px;
+    right: 400px;
+    width: 70px;
+    height: 50px;
+    .mug-body {
+      width: 66%;
+      height: 100%;
+      background-color: #006666;
+      border-radius: 2px;
+    }
+    .mug-handle {
+      top: 8%;
+      right: 6%;
+      width: 30%;
+      height: 60%;
+      border-radius: 0 16px 16px 0;
+      border: 6px solid #006666;
+    }
+  }
 }
