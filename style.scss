@@ -145,13 +145,13 @@ body {
         bottom: 0;
         width: 100%;
         height: 28px;
-        background-color: #006666;
+        background-color: #3266cd;
       }
       .pen-top {
         left: 28%;
         width: 50%;
         height: 16px;
-        background-color: #006666;
+        background-color: #3266cd;
       }
     }
     .pencil {
@@ -170,6 +170,34 @@ body {
           background-color: pink;
         }
       }
+    }
+  }
+  .books {
+    top: 260px;
+    right: 250px;
+    width: 120px;
+    height: 90px;
+    .bottom-book {
+      bottom: 0;
+      width: 100%;
+      height: 30px;
+      background-color: #006666;
+      border-radius: 4px;
+    }
+    .middle-book {
+      left: 5%;
+      bottom: 30px;
+      width: 90%;
+      height: 20px;
+      background-color: #3266cd;
+      border-radius: 3px;
+    }
+    .top-book {
+      bottom: 50px;
+      width: 90%;
+      height: 15px;
+      background-color: orange;
+      border-radius: 2px;
     }
   }
 }
