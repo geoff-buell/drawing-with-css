@@ -15,10 +15,11 @@ body {
 .right-leg, .laptop, .screen-border, .camera,
 .screen, .base, .notch, .mug, .mug-body,
 .mug-handle, .pen-cup, .pen-cup-body,
-.pen-cup-base, .pen, .pen-body, .pen-top, .pencil,
-.pencil-top, .eraser, .books, .bottom-book,
-.middle-book, .top-book, .plant, .pot, .stem,
-.leaf-1, .leaf-2, .leaf-3 {
+.pen-cup-base, .pen, .pen-body, .pen-top,
+.pencil, .pencil-top, .eraser, .books,
+.bottom-book, .middle-book, .top-book, .plant,
+.pot, .pot-rim, .stem, .leaf-1, .leaf-2,
+.leaf-3 {
   position: absolute;
 }
 
@@ -200,6 +201,65 @@ body {
   height: 15px;
   background-color: orange;
   border-radius: 2px;
+}
+.image-wrap .plant {
+  top: 200px;
+  right: 880px;
+  width: 100px;
+  height: 150px;
+}
+.image-wrap .plant .pot {
+  z-index: 1;
+  bottom: 0;
+  left: 10px;
+  width: 70px;
+  height: 0;
+  border-top: 70px solid #994d00;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.image-wrap .plant .pot-rim {
+  z-index: 1;
+  bottom: 65px;
+  left: 5%;
+  width: 90%;
+  height: 20px;
+  background-color: #994d00;
+  border-radius: 2px;
+  border-bottom: 2px solid #804000;
+}
+.image-wrap .plant .stem {
+  top: 10px;
+  left: 48%;
+  width: 4px;
+  height: 60px;
+  background-color: green;
+}
+.image-wrap .plant .leaf-1 {
+  top: 23px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  border-radius: 0 50px 10px 50px;
+}
+.image-wrap .plant .leaf-2 {
+  top: 10px;
+  right: 18px;
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  border-radius: 50px 0 50px 10px;
+  transform: rotate(15deg);
+}
+.image-wrap .plant .leaf-3 {
+  top: -15px;
+  left: 35px;
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  border-radius: 0 50px 10px 50px;
+  transform: rotate(45deg);
 }
 
 /*# sourceMappingURL=style.css.map */
