@@ -19,7 +19,9 @@ body {
 .pencil, .pencil-top, .eraser, .books, 
 .bottom-book, .middle-book, .top-book, .plant, 
 .pot, .pot-rim, .stem, .leaf-1, .leaf-2, 
-.leaf-3 {
+.leaf-3, .chair, .chair-top, .chair-back,
+.chair-back-1, .chair-back-2, .chair-back-3,
+.chair-back-4, .chair-back-5, .chair-back-6 {
   position: absolute;
 }
 
@@ -261,6 +263,51 @@ body {
       background-color: green;
       border-radius: 0 50px 10px 50px;
       transform: rotate(45deg);
+    }
+  }
+  .chair {
+    visibility: hidden;
+    z-index: 1;
+    bottom: 0;
+    right: 470px;
+    width: 320px;
+    height: 145px;
+    overflow: hidden;
+    .chair-top {
+      width: 100%;
+      height: 50px;
+      border-radius: 10px 10px 50% 50%;
+      box-shadow: inset 0 -35px 0 0 #604020;
+    }
+    .chair-back {
+      top: 30px;
+      width: 20px;
+      height: 130px;
+      background-color: #604020;
+    }
+    .chair-back-1 {
+      left: 7%;
+      transform: rotate(-6deg);
+    }
+    .chair-back-2 {
+      left: 22%;
+      transform: rotate(-3deg);
+    }
+    .chair-back-3 {
+      left: 38%;
+      transform: rotate(-1deg);
+    }
+    .chair-back-4 {
+      right: 38%;
+      transform: rotate(1deg);
+    }
+    .chair-back-5 {
+      right: 22%;
+      transform: rotate(3deg);
+    }
+    .chair-back-6 {
+      right: 7%;
+      transform: rotate(6deg);
     }
   }
 }
