@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+}
+
+.desk, .tabletop, .tabletop-border, .left-leg,
+.right-leg, .laptop, .screen-border, .camera,
+.screen, .base, .notch, .mug, .mug-body,
+.mug-handle, .pen-cup, .pen-cup-body,
+.pen-cup-base, .pen, .pen-body, .pen-top,
+.pencil, .pencil-top, .eraser, .books,
+.bottom-book, .middle-book, .top-book, .plant,
+.pot, .pot-rim, .stem, .leaf-1, .leaf-2,
+.leaf-3, .chair, .chair-top, .chair-back,
+.chair-back-1, .chair-back-2, .chair-back-3,
+.chair-back-4, .chair-back-5, .chair-back-6,
+.cat, .cat-body, .cat-head, .cat-left-ear,
+.cat-right-ear, .cat-tail, .logo, .label {
+  position: absolute;
+}
+
+.image-wrap {
+  position: relative;
+  width: 1500px;
+  height: 500px;
+  background-color: #e6f2ff;
+}
+.image-wrap .desk {
+  bottom: 0;
+  right: 220px;
+  width: 800px;
+  height: 150px;
+}
+.image-wrap .desk .tabletop {
+  z-index: 1;
+  width: 100%;
+  height: 10px;
+  background-color: #bf8040;
+  border-radius: 2px 2px 4px 4px;
+}
+.image-wrap .desk .tabletop-border {
+  z-index: 1;
+  top: 10px;
+  left: 1%;
+  width: 98%;
+  height: 30px;
+  background-color: #996633;
+  border-radius: 0 0 4px 4px;
+  border-bottom: 2px solid #86592d;
+}
+.image-wrap .desk .left-leg, .image-wrap .desk .right-leg {
+  top: 40px;
+  width: 30px;
+  height: 110px;
+  background-color: #996633;
+}
+.image-wrap .desk .left-leg {
+  left: 2%;
+}
+.image-wrap .desk .right-leg {
+  right: 2%;
+}
+.image-wrap .laptop {
+  top: 200px;
+  right: 500px;
+  width: 260px;
+  height: 150px;
+}
+.image-wrap .laptop .screen-border {
+  left: 7%;
+  width: 86%;
+  height: 90%;
+  background-color: #1a1a1a;
+  border-radius: 8px 8px 0 0;
+  border: 2px solid #808080;
+}
+.image-wrap .laptop .screen-border .camera {
+  top: 4px;
+  left: 107.8px;
+  width: 6px;
+  height: 6px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.image-wrap .laptop .screen-border .screen {
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  height: 80%;
+  background-color: #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-wrap .laptop .screen-border .screen i {
+  font-size: 4rem;
+  color: #3266cd;
+}
+.image-wrap .laptop .base {
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #808080;
+  border-radius: 2px 2px 10px 10px;
+}
+.image-wrap .laptop .base .notch {
+  left: 110px;
+  width: 40px;
+  height: 8px;
+  background-color: #595959;
+  border-radius: 0 0 10px 10px;
+}
+.image-wrap .mug {
+  top: 300px;
+  right: 400px;
+  width: 70px;
+  height: 50px;
+}
+.image-wrap .mug .mug-body {
+  width: 66%;
+  height: 100%;
+  background-color: #3a3050;
+  border-radius: 2px;
+}
+.image-wrap .mug .mug-handle {
+  top: 8%;
+  right: 6%;
+  width: 30%;
+  height: 60%;
+  border-radius: 0 16px 16px 0;
+  border: 6px solid #3a3050;
+}
+.image-wrap .pen-cup {
+  top: 250px;
+  right: 800px;
+  width: 50px;
+  height: 100px;
+}
+.image-wrap .pen-cup .pen-cup-body {
+  z-index: 1;
+  bottom: 0;
+  width: 40px;
+  height: 0;
+  border-top: 70px solid #004d4d;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.image-wrap .pen-cup .pen {
+  left: 10px;
+  width: 8px;
+  height: 36px;
+  transform: rotate(-5deg);
+}
+.image-wrap .pen-cup .pen .pen-body {
+  bottom: 0;
+  width: 100%;
+  height: 28px;
+  background-color: #3266cd;
+}
+.image-wrap .pen-cup .pen .pen-top {
+  left: 28%;
+  width: 50%;
+  height: 16px;
+  background-color: #3266cd;
+}
+.image-wrap .pen-cup .pencil {
+  left: 30px;
+  width: 6px;
+  height: 36px;
+  background-color: orange;
+  transform: rotate(7deg);
+}
+.image-wrap .pen-cup .pencil .pencil-top {
+  width: 100%;
+  height: 16px;
+  background-color: silver;
+}
+.image-wrap .pen-cup .pencil .pencil-top .eraser {
+  width: 100%;
+  height: 6px;
+  background-color: pink;
+}
+.image-wrap .books {
+  top: 260px;
+  right: 250px;
+  width: 120px;
+  height: 90px;
+}
+.image-wrap .books .bottom-book {
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #004d4d;
+  border-radius: 4px;
+}
+.image-wrap .books .bottom-book .logo {
+  top: 25%;
+  left: 10%;
+  width: 12%;
+  height: 50%;
+  background-color: #006666;
+  border-radius: 50%;
+}
+.image-wrap .books .bottom-book .label {
+  top: 35%;
+  left: 25%;
+  width: 40%;
+  height: 30%;
+  background-color: #006666;
+}
+.image-wrap .books .middle-book {
+  left: 5%;
+  bottom: 30px;
+  width: 90%;
+  height: 20px;
+  background-color: #3266cd;
+  border-radius: 3px;
+}
+.image-wrap .books .middle-book .logo {
+  top: 25%;
+  right: 10%;
+  width: 12%;
+  height: 50%;
+  background-color: #2851a4;
+}
+.image-wrap .books .middle-book .label {
+  top: 35%;
+  right: 25%;
+  width: 50%;
+  height: 30%;
+  background-color: #2851a4;
+}
+.image-wrap .books .top-book {
+  bottom: 50px;
+  width: 90%;
+  height: 15px;
+  background-color: #ff5050;
+  border-radius: 2px;
+}
+.image-wrap .books .top-book .logo {
+  top: 25%;
+  left: 8%;
+  width: 10%;
+  height: 50%;
+  background-color: #ff8080;
+}
+.image-wrap .books .top-book .label {
+  top: 35%;
+  left: 20%;
+  width: 50%;
+  height: 30%;
+  background-color: #ff8080;
+}
+.image-wrap .plant {
+  top: 200px;
+  right: 880px;
+  width: 100px;
+  height: 150px;
+}
+.image-wrap .plant .pot {
+  z-index: 1;
+  bottom: 0;
+  left: 10px;
+  width: 70px;
+  height: 0;
+  border-top: 70px solid #994d00;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.image-wrap .plant .pot-rim {
+  z-index: 1;
+  bottom: 65px;
+  left: 5%;
+  width: 90%;
+  height: 20px;
+  background-color: #994d00;
+  border-radius: 2px;
+  border-bottom: 2px solid #804000;
+}
+.image-wrap .plant .stem {
+  top: 10px;
+  left: 48%;
+  width: 4px;
+  height: 60px;
+  background-color: green;
+}
+.image-wrap .plant .leaf-1 {
+  top: 23px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  border-radius: 0 50px 10px 50px;
+}
+.image-wrap .plant .leaf-2 {
+  top: 10px;
+  right: 18px;
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  border-radius: 50px 0 50px 10px;
+  transform: rotate(15deg);
+}
+.image-wrap .plant .leaf-3 {
+  top: -15px;
+  left: 35px;
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  border-radius: 0 50px 10px 50px;
+  transform: rotate(45deg);
+}
+.image-wrap .chair {
+  visibility: hidden;
+  z-index: 1;
+  bottom: 0;
+  right: 470px;
+  width: 320px;
+  height: 145px;
+  overflow: hidden;
+}
+.image-wrap .chair .chair-top {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px 10px 50% 50%;
+  box-shadow: inset 0 -35px 0 0 #604020;
+}
+.image-wrap .chair .chair-back {
+  top: 30px;
+  width: 20px;
+  height: 130px;
+  background-color: #604020;
+}
+.image-wrap .chair .chair-back-1 {
+  left: 7%;
+  transform: rotate(-6deg);
+}
+.image-wrap .chair .chair-back-2 {
+  left: 22%;
+  transform: rotate(-3deg);
+}
+.image-wrap .chair .chair-back-3 {
+  left: 38%;
+  transform: rotate(-1deg);
+}
+.image-wrap .chair .chair-back-4 {
+  right: 38%;
+  transform: rotate(1deg);
+}
+.image-wrap .chair .chair-back-5 {
+  right: 22%;
+  transform: rotate(3deg);
+}
+.image-wrap .chair .chair-back-6 {
+  right: 7%;
+  transform: rotate(6deg);
+}
+.image-wrap .cat {
+  z-index: -1;
+  top: 150px;
+  right: 680px;
+  width: 100px;
+  height: 200px;
+}
+.image-wrap .cat .cat-body {
+  bottom: 0;
+  right: 0;
+  width: 88%;
+  height: 60%;
+  background-color: #000;
+  border-radius: 50% 50% 0 20%;
+  transform: rotate(-5deg);
+}
+.image-wrap .cat .cat-head {
+  top: 30px;
+  left: 15px;
+  width: 70px;
+  height: 60px;
+  background-color: #000;
+  border-radius: 50%;
+  transform: rotate(-8deg);
+}
+.image-wrap .cat .cat-left-ear {
+  top: 20px;
+  left: 8px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 25px solid #000;
+  transform: rotate(-35deg);
+}
+.image-wrap .cat .cat-right-ear {
+  top: 18px;
+  left: 60px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 25px solid #000;
+  transform: rotate(30deg);
+}
+.image-wrap .cat .cat-tail {
+  left: -90px;
+  bottom: 0;
+  width: 120px;
+  height: 15px;
+  background-color: #000;
+  border-radius: 100% 0 0 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
