@@ -8,7 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e6f2ff;
+  background-color: #333;
 }
 
 .desk, .tabletop, .tabletop-border, .left-leg,
@@ -31,7 +31,7 @@ body {
   position: relative;
   width: 1500px;
   height: 500px;
-  border: 1px solid red;
+  background-color: #e6f2ff;
 }
 .image-wrap .desk {
   bottom: 0;
@@ -96,6 +96,13 @@ body {
   width: 90%;
   height: 80%;
   background-color: #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-wrap .laptop .screen-border .screen i {
+  font-size: 4rem;
+  color: #3266cd;
 }
 .image-wrap .laptop .base {
   bottom: 0;
